@@ -7,9 +7,13 @@ There are some libraries already created open sourced for doing such extractions
 ### 1. PDFToText: 
 
 If the pdf is not made out of images this library is one of the best to use. It is really easy to use and can cnvert the pdf data into simple raw text very precisely. Let's see some samples of this.
-    ![samples_pdf](images/sample_pdf.PNG)
-    ![sample_csv](images/sample_csv.PNG)
+![samples_pdf](images/sample_pdf.PNG)
+    
+![sample_csv](images/sample_csv.PNG)
+
+
 In the above two pictures, the first one is the image of the pdf file and the second one is of the `csv` file that is generated from by the `pdftotext` library. The example taken is to show the capability of the library to extract the tables and data at the same time in meaningful day. 
+    
     Requirments to use `pdftotext` are:
      1. OS - Linux
      2. Python >= 3.0
