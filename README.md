@@ -12,7 +12,7 @@ If the pdf is not made out of images this library is one of the best to use. It 
 ![sample_csv](images/sample_csv.PNG)
 
 
-In the above two pictures, the first one is the image of the pdf file and the second one is of the `csv` file that is generated from by the `pdftotext` library. The example taken is to show the capability of the library to extract the tables and data at the same time in meaningful day. 
+In the above two pictures, the first one is the image of the pdf file and the second one is of the `csv` file that is generated from by the `pdftotext` library. The example taken is to show the capability of the library to extract the tables and data at the same time in meaningful way. After that anyone can apply regular extractions to get the most out of the data from the csv file. We have added some files in `data` folder as examples. 
     
     Requirments to use `pdftotext` are:
      1. OS - Linux
