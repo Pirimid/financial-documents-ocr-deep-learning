@@ -1,0 +1,5 @@
+,issuer,amount,amount_untaxed,date,invoice_number,partner_name,partner_website,currency,lines,desc
+0,Amazon Web Services,4.11,4.11,2014-08-03,42183017,"Amazon Web Services, Inc.",aws.amazon.com,USD,"{'description': 'AWS Data Transfer', 'price_unit': '0.01'}",Invoice from Amazon Web Services
+1,Amazon Web Services,4.11,4.11,2014-08-03,42183017,"Amazon Web Services, Inc.",aws.amazon.com,USD,"{'description': 'Amazon Elastic Compute Cloud', 'price_unit': '1.87'}",Invoice from Amazon Web Services
+2,Amazon Web Services,4.11,4.11,2014-08-03,42183017,"Amazon Web Services, Inc.",aws.amazon.com,USD,"{'description': 'Amazon Glacier', 'price_unit': '2.22'}",Invoice from Amazon Web Services
+3,Amazon Web Services,4.11,4.11,2014-08-03,42183017,"Amazon Web Services, Inc.",aws.amazon.com,USD,"{'description': 'Amazon Simple Storage Service', 'price_unit': '0.01'}",Invoice from Amazon Web Services
