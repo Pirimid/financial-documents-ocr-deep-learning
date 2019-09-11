@@ -23,7 +23,7 @@ In the above two pictures, the first one is the image of the pdf file and the se
 
 PDF2Text can extract data from `text PDF`, where as it will fail for extracting data from `image PDF`. In real world scenario one can get any kind of PDFs, so one needs to use `Optical character recognition` (OCR) libraries which are meant for this. Tesseract is one of the best example of it. Let us understand it with these samples:
 
-![samples_pdf](images/tesseract_sample_result.PNG)
+![tesseract Example](images/tesseract_sample_result.PNG)
 
 In the above picture we can see how information is extracted. The lest most is the a receipt and the left most is the output which one gets after applying tesseract onto it.
 
@@ -36,9 +36,9 @@ In the above picture we can see how information is extracted. The lest most is t
 
 Invoice2Data library can used not just only to extract data from PDF but also get information from that extracted data. Both the above libraries can be used for their specific usage, where as `Invoice2Data` provides ability to extract data with any of the above mentioned (and also more) libraries. It extracts the data from the PDF and then using the templates one can get the desired information out of it. Below is shown a sample of how it works:
 
-![samples_pdf](images/AmazonWebService_PDF_Image.jpg)
+![AWS PDF](images/AmazonWebService_PDF_Image.jpg)
 
-![samples_pdf](images/invoice2data_csv_result.png)
+![Invoice2Data CSV](images/invoice2data_csv_result.png)
 
 
 The first image is the PDF of AWS receipt, and the second is the extracted information in form of CSV data. For more information on how to use Invoice2Data and how templates work, review it's [GitHub repository](https://github.com/invoice-x/invoice2data)
