@@ -38,7 +38,7 @@ Invoice2Data library can used not just only to extract data from PDF but also ge
 
 ![AWS PDF](images/AmazonWebService_PDF_Image.jpg)
 
-![Invoice2Data CSV](images/invoice2data_csv_result.png)
+![Invoice2Data CSV](images/invoice2data_csv_result.PNG)
 
 
 The first image is the PDF of AWS receipt, and the second is the extracted information in form of CSV data. For more information on how to use Invoice2Data and how templates work, review it's [GitHub repository](https://github.com/invoice-x/invoice2data)
