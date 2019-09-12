@@ -2,7 +2,7 @@
 
 There is so much data into the `pdfs` that we store but for other purposes like training the machine learning model we can not use that data directly from `pdfs`. This is really one of the issue when we have to work with financial data as most of the companies works with `pdfs` to store their P&L, tax returns, general meeting notes and much more. Even the broachers of the companies are into `pdfs`. In order to study more about the companies we need some way to extract this data efficiently and precisely. Here we would like to show our research and work around how to get the data from `pdfs`. 
 
-There are some libraries already created open sourced for doing such extractions. Let's see in depth some of them. 
+There are some libraries already created, open sourced for doing such extractions. Let's see in depth some of them. 
 
 ### 1. PDFToText: 
 
@@ -13,6 +13,12 @@ If the pdf is not made out of images this library is one of the best to use. It 
 
 
 In the above two pictures, the first one is the image of the pdf file and the second one is of the `csv` file that is generated from by the `pdftotext` library. The example taken is to show the capability of the library to extract the tables and data at the same time in meaningful way. After that anyone can apply regular extractions to get the most out of the data from the csv file. We have added some files in `data` folder as examples. 
+
+You can use the sample code that we have used from `code` folder. Do following to use that
+
+1. Change the name of the `pdf` file path at the line 5 from `./data/sample_file.pdf` to your desired file path.
+2. Change the name of the output file at the line line 16 from `./data/sample_csv.csv` to your desired file path. 
+3. Run file `pdftotext_sample.py` from the terminal using `python pdftotext_sample.py` command.
     
     Requirements to use `pdftotext` are:
      1. OS - Linux

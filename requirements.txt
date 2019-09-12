@@ -1,0 +1,2 @@
+pandas==0.24.2
+pdftotext==2.1.2
