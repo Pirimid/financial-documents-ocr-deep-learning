@@ -6,18 +6,18 @@ from invoice2data.input import pdftotext
 import pandas as pd
 
 # Importing custom template
-templates = read_templates('template/')
+templates = read_templates('./template/')
 
 #print(templates)
 
 # Extract data from PDF
-result = extract_data('data/pnlsheet.pdf', templates = templates, input_module = pdftotext)
+result = extract_data('./data/pnlsheet.pdf', templates = templates, input_module = pdftotext)
 
 # Store the extracted data to a Data-frame
 df = pd.DataFrame(data = result)
 
 # Export Data-frame to a csv file
-df.to_csv('data/invoice2data_simple.csv')
+df.to_csv('./data/invoice2data_simple.csv')
 
 
 ''' 
