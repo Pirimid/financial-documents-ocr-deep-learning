@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*-
+issuer: Arigo Private Limited
+fields:
+  static_invoice_number:
+  static_amount:
+  static_date: 
+  current_assets: (?i)\s*current\s*assets\s*\$(\d+,*\d+)
+  cash: (?i)(?<!\w)cash\s*\$(\d+,*\d+)
+  Petty cash: (?i)\s*petty\s*cash\s*\$(\d+,*\d+)
+  Inventory: (?i)\s*inventory\s*\$(\d+,*\d+)
+  Fixed assests: (?i)\s*fixed\s*assets\s*\$(\d+,*\d+)
+  Leasehold: (?i)\s*leasehold\s*\$(\d+,*\d+)
+  long-term liabilities: (?i)\s*long-term\s*liabilities\s*\$(\d+,*\d+)
+  Total assets: (?i)\s*total\s*assets\s*\$(\d+,*\d+)
+  Total liabilities: (?i)\s*total\s*liabilities\s*\$(\d+,*\d+)
+  Net assets: (?i)\s*net\s*assets\s*(?:\W*\w*\s*\w*\W*)\s*\$(\d+,*\d+)
+  Working Capital: (?i)\s*working\s*capital\s*\$(\d+,*\d+)
+lines:
+  start: Equity Share Capital\s+6,339.00\s+6,335.00
+  end: (?i)\s+reserves\s*and\s*surplus
+  line: (?P<type>\w+)\s+(?P<In March 19>\d+,*\d+\.*)\s+(?P<March 18>\d+,*\d+\.*)
+keywords:
+  - 'Balance'
