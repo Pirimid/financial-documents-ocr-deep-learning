@@ -54,3 +54,42 @@ The first image is the PDF of AWS receipt, and the second is the extracted infor
      1. OS - Linux
      2. Python >= 3.0
     Here is the package link on pypi https://pypi.org/project/invoice2data/0.0.1/
+
+### Pdfminer.six
+
+Pdfminer.six is a community maintained fork of the original PDFMiner. It is a tool for extracting information from PDF documents. It focuses on getting and analyzing text data. Pdfminer.six extracts the text from a page directly from the sourcecode of the PDF. It can also be used to get the exact location, font or color of the text.
+
+It is build in a modular way such that each component of pdfminer.six can be replaced easily. You can implement your own interpreter or rendering device to use the power of pdfminer.six for other purposes that text analysis.
+
+![SAMPLE PDF](images/pdf-sample-page-001.jpg)
+
+Result:
+
+Adobe Acrobat PDF Files
+Adobe® Portable Document Format (PDF) is a universal file format that preserves all
+of the fonts, formatting, colours and graphics  of any  source document,  regardless of
+the application and platform used to create it.
+Adobe PDF is an ideal format for electronic document distribution as it overcomes the
+problems commonly encountered with electronic file sharing.
+•  Anyone, anywhere can open a PDF file. All you need is the free Adobe Acrobat
+Reader.  Recipients  of  other  file  formats  sometimes  can't  open  files  because  they
+don't have the applications used to create the documents.
+•  PDF files always print correctly on any printing device.
+•  PDF  files  always  display  exactly  as  created,  regardless  of  fonts,  software,  and
+operating systems. Fonts, and graphics are not lost due to platform, software, and
+version incompatibilities.
+•  The  free  Acrobat  Reader  is  easy  to  download  and  can  be  freely  distributed  by
+anyone.
+•  Compact  PDF  files  are  smaller  than  their  source  files  and  download  a
+page at a time for fast display on the Web.
+
+
+    Requirements to use `pdfminer.six` are:
+     1. Python >= 3.4
+    
+    Insall:
+     1. pip install pdfminer.six
+     
+         
+
+
