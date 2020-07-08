@@ -25,7 +25,7 @@ You can use the sample code that we have used from `code` folder. Do following t
      2. Python >= 3.0
     Here is the package link on pypi https://pypi.org/project/pdftotext/.
 
-### Tesseract
+### 2. Tesseract
 
 PDF2Text can extract data from `text PDF`, where as it will fail for extracting data from `image PDF`. In real world scenario one can get any kind of PDFs, so one needs to use `Optical character recognition` (OCR) libraries which are meant for this. Tesseract is one of the best example of it. Let us understand it with these samples:
 
@@ -38,7 +38,7 @@ In the above picture we can see how information is extracted. The lest most is t
      2. Python 2.7 or 3.5+
     Here is the package link on pypi https://pypi.org/project/pytesseract/
 
-### Invoice2Data
+### 3. Invoice2Data
 
 Invoice2Data library can used not just only to extract data from PDF but also get information from that extracted data. Both the above libraries can be used for their specific usage, where as `Invoice2Data` provides ability to extract data with any of the above mentioned (and also more) libraries. It extracts the data from the PDF and then using the templates one can get the desired information out of it. Below is shown a sample of how it works:
 
@@ -55,7 +55,7 @@ The first image is the PDF of AWS receipt, and the second is the extracted infor
      2. Python >= 3.0
     Here is the package link on pypi https://pypi.org/project/invoice2data/0.0.1/
 
-### Pdfminer.six
+### 4. Pdfminer.six
 
 Pdfminer.six is a community maintained fork of the original PDFMiner. It is a tool for extracting information from PDF documents. It focuses on getting and analyzing text data. Pdfminer.six extracts the text from a page directly from the sourcecode of the PDF. It can also be used to get the exact location, font or color of the text.
 
@@ -90,7 +90,7 @@ page at a time for fast display on the Web. <br />
     Insall:
      1. pip install pdfminer.six
  
- ### Fetching information from KYC document using pytessereact:
+ ### 5. Pytessereact - Extracting information from KYC document
  
  Pytessereact is trained on different languages.If the document has different languages then we need to train the pytessereact and if image is not clear or visible then we need to use some image processing techniques like thresholding,opening,border detection.
  
