@@ -65,23 +65,23 @@ It is build in a modular way such that each component of pdfminer.six can be rep
 
 Result:
 
-Adobe Acrobat PDF Files
-Adobe® Portable Document Format (PDF) is a universal file format that preserves all
-of the fonts, formatting, colours and graphics  of any  source document,  regardless of
-the application and platform used to create it.
-Adobe PDF is an ideal format for electronic document distribution as it overcomes the
-problems commonly encountered with electronic file sharing.
-•  Anyone, anywhere can open a PDF file. All you need is the free Adobe Acrobat
-Reader.  Recipients  of  other  file  formats  sometimes  can't  open  files  because  they
-don't have the applications used to create the documents.
-•  PDF files always print correctly on any printing device.
-•  PDF  files  always  display  exactly  as  created,  regardless  of  fonts,  software,  and
-operating systems. Fonts, and graphics are not lost due to platform, software, and
-version incompatibilities.
-•  The  free  Acrobat  Reader  is  easy  to  download  and  can  be  freely  distributed  by
-anyone.
-•  Compact  PDF  files  are  smaller  than  their  source  files  and  download  a
-page at a time for fast display on the Web.
+Adobe Acrobat PDF Files <br />
+Adobe® Portable Document Format (PDF) is a universal file format that preserves all <br />
+of the fonts, formatting, colours and graphics  of any  source document,  regardless of <br />
+the application and platform used to create it. <br />
+Adobe PDF is an ideal format for electronic document distribution as it overcomes the <br />
+problems commonly encountered with electronic file sharing. <br />
+•  Anyone, anywhere can open a PDF file. All you need is the free Adobe Acrobat <br />
+Reader.  Recipients  of  other  file  formats  sometimes  can't  open  files  because  they <br />
+don't have the applications used to create the documents. <br />
+•  PDF files always print correctly on any printing device. <br />
+•  PDF  files  always  display  exactly  as  created,  regardless  of  fonts,  software,  and <br />
+operating systems. Fonts, and graphics are not lost due to platform, software, and <br />
+version incompatibilities. <br />
+•  The  free  Acrobat  Reader  is  easy  to  download  and  can  be  freely  distributed  by <br />
+anyone. <br />
+•  Compact  PDF  files  are  smaller  than  their  source  files  and  download  a <br />
+page at a time for fast display on the Web. <br />
 
 
     Requirements to use `pdfminer.six` are:
@@ -89,7 +89,23 @@ page at a time for fast display on the Web.
     
     Insall:
      1. pip install pdfminer.six
-     
+ 
+ ### Fetching information from KYC document using pytessereact:
+ 
+ ![LICENCE IMAGE](images/Uk_licence.jpg)
          
+Result:
 
+1, MORGAN <br/>
+2, SARAH <br/>
+MEREDYTH <br/>
+3. 11.03.1976 UNITED KINGDOM <br/>
+4a. 19.01.2013 4c. DVLA <br/>
+4b. 18.01.2023 <br/>
+5. MORGA753116SM9lJ 35 <br/>
+8. 122 BURNS CRESCENT <br/>
+EDINBURGH <br/>
+EH1 9GP. <br/>
+9. AM/A/B1/B/f/kK/I/n/p/q <br/>
+DVLA INTERNAL USE <br/>
 
