@@ -92,6 +92,10 @@ page at a time for fast display on the Web. <br />
  
  ### Fetching information from KYC document using pytessereact:
  
+ Pytessereact is trained on different languages.If the document has different languages then we need to train the pytessereact and if image is not clear or visible then we need to use some image processing techniques like thresholding,opening,border detection.
+ 
+ Here we have fetched data from UK sample licence using this library.
+ 
  ![LICENCE IMAGE](images/Uk_licence.jpg)
          
 Result:
