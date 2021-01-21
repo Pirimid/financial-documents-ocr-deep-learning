@@ -116,7 +116,7 @@ EH1 9GP.
 9. AM/A/B1/B/f/kK/I/n/p/q
 DVLA INTERNAL USE
 ```
- ### 6. Marksheet:
+ ### Marksheet:
 
 One more example is below for the Pytessereact. Here we are extracting data from marksheet for engineering student. The original image for the same is as below
 
@@ -125,30 +125,33 @@ One more example is below for the Pytessereact. Here we are extracting data from
 From the above image, the extracted data is as below
 ```
 Academic Year             Month & Year of Examination      Satement No.
-2016-2017          MAY-2017         1148827843
+2016-2017                      MAY-2017                      1148827843
 
-Course Code & Name 040       SANKALCHAND PATEL COLLEGE OF ENGINEERING, VISNAGAR
+Course Code &        040    SANKALCHAND PATEL COLLEGE OF ENGINEERING, VISNAGAR
+Name
 
-Course                   Branch Name
-BACHELOR OF ENGINEERING MECHANICAL ENGINEERING
+       Course                           Branch Name
+BACHELOR OF ENGINEERING           MECHANICAL ENGINEERING
 
 Student's Name
-PATEL POOJANKUMAR MUKESHBHAI
+          PATEL POOJANKUMAR MUKESHBHAI
 
-Enrolment No(NEW) 150400119084 Enrolment No(OLD) 150400119084  Seat No. E319478
+Enrolment No(NEW) 150400119084   Enrolment No(OLD) 150400119084    Seat No. E319478
 
-2131903 Manufacturing Process-1      5 DD BB BB BB CD BB CC
+Subject
+Code               Subject Name         Course  Theory Component Practical Component Theory Practical Subject
+                                                ESE PA            ESE PA              Grade   Grade   Grade
+                                        Credit
+2131903     Manufacturing Process-1      5      DD  BB     BB BB     CD    BB    CC
 ```
 
 We can see that some of the information is still missing as that is due to the color schema of the image. But, with proper image processing like converting image to black and white it is possible to sovle such issues and get perfect results.
 
- ### 7. Income Tax Return (ITR)
+ ### Income Tax Return (ITR)
 
  Below is small example on ITR. Due to size of image we could not show the full image of ITR but as you can see below the small excerpt of ITR and how the model is able to get the data as it is from the image.
 
  ![ITR](images/ITR_final.jpg)
-
- ![ITR_output](images/itr_output.png)
 
 ```
 Name
@@ -173,3 +176,20 @@ PAN                           |        AY:   2020-21          |         DIN  : C
 ```
 
  As you can see the data is preserved properly and in a way where we can do further processing and apply logic as per need of the system.
+
+### Stock Research Reports
+
+So many institutes publishes research report every quarter on stock. Many hedge fund managers read those reports in order to make decisions on if they should invest in such stocks or not. This gave us very interesting problem where we parsed many stocks reports published by different institutes for same campany and analyze them to make one generalized report for managers. We have already working prototype where we can extract information like Target Price, Published Date, Action and so on. We are also able to extract different tables presents in such reports to show user how on average stock is performing as per different institutes.Below is just small snippet from such report and we have shown that we are able to get details like Stock Name, Date, Action, Target Price and so on. There is complext logic and modeling workflow behind it which we can not show here.
+
+![StockReport](images/stock_researh.png)
+
+Here is the ouput for above image from our system
+
+```
+file_name,companyName,action,date,targetPrice,currentPrice
+HUVR-23-7-19-PL.pdf,hindustan unilever,accumulate,July 23 2019,accumulate,1816,1690
+```
+
+As you can see our system accurately tells most important data from stock research reports out of the box.
+
+We have applied OCR techniques to many other financial use cases and documents and have achived state of the art results.
