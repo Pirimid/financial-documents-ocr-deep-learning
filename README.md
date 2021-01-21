@@ -116,7 +116,7 @@ EH1 9GP.
 9. AM/A/B1/B/f/kK/I/n/p/q
 DVLA INTERNAL USE
 ```
- ### Marksheet:
+ ### 6. Marksheet:
 
 One more example is below for the Pytessereact. Here we are extracting data from marksheet for engineering student. The original image for the same is as below
 
@@ -142,7 +142,7 @@ Enrolment No(NEW) 150400119084 Enrolment No(OLD) 150400119084  Seat No. E319478
 
 We can see that some of the information is still missing as that is due to the color schema of the image. But, with proper image processing like converting image to black and white it is possible to sovle such issues and get perfect results.
 
- ### Income Tax Return
+ ### 7. Income Tax Return (ITR)
 
  Below is small example on ITR. Due to size of image we could not show the full image of ITR but as you can see below the small excerpt of ITR and how the model is able to get the data as it is from the image.
 
