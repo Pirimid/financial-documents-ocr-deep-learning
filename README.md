@@ -150,4 +150,26 @@ We can see that some of the information is still missing as that is due to the c
 
  ![ITR_output](images/itr_output.png)
 
+```
+Name
+PAN                           |        AY:   2020-21          |         DIN  : CPC/2021/A1/105231128            |    Ack. No.  : 439435200030820
+
+
+ SI.No.      Particulars             Reporting Heads                                                                                              Amount  in =
+                                                                                                            As provided by Taxpayer As Computed u/s 143(1)
+
+ 01           SALARY
+                                    (i) Gross  salary (iatibtic)                                         7,83,867                7,83,867
+                                            (a) Salary as per section  17(1)                             7,83,867                7,83,867
+                                            (b) Value  of perquisites as per section 17(2)               0                       0
+                                            (c) Profits in lieu of salary as per sec 17(3)               0                       0
+                                    (ii) Less : Allowances  to the extent exempt  u/s 10                 42,037                  42,037
+                                    (iii) Net salary (i-ii)                                              7,41,830               7,41,830
+                                    (iv) Deduction  u/s 16 (ivativbtive)                                 52,400                  52,400
+                                            (a) Standard  deduction  u/s 16  (ia)                        50,000                  50,000
+                                            (b) Entertainment  allowance   u/s 16 (ii)                   0                       0
+                                            (c) Professional  tax 16(iii)                                2,400                   2,400
+                                    (v) Income  chargeable  under the head ‘Salaries’ (iii-iv)	         6,89,430               6,89,430
+```
+
  As you can see the data is preserved properly and in a way where we can do further processing and apply logic as per need of the system.
