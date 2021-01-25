@@ -193,3 +193,52 @@ HUVR-23-7-19-PL.pdf,hindustan unilever,accumulate,July 23 2019,accumulate,1816,1
 As you can see our system accurately tells most important data from stock research reports out of the box.
 
 We have applied OCR techniques to many other financial use cases and documents and have achived state of the art results.
+
+## What we need to do after we get the data out from documents?
+
+There are many things we need to do after we get the data out of the documents. Some of the challanges for the same are listed below
+
+    1) Name matching - I.e. a)  Urvish Patel vs Urvish P.  b) Urvishkumar Patel vs Urvish Patel
+    2) Address matching across documents where address entered might be slightly different
+    3) Deduplication of photos/documents
+    4) How to check the quality of the documents I.e. borders, lighting etc.
+
+To solve above issues we can have following solution.
+
+1. Name matching - I.e. a)  Urvish Patel vs Urvish P.  b) Urvishkumar Patel vs Urvish Patel
+
+    There are algorithms specifically designed to solve this problem. They are measures how much similarity is there between two words and hence give us the idea if texts are same or different.
+
+    Two such algorithms are
+
+    A.) Levenshtein Distance
+    ![edit_distance](images/edit_distance.png)
+
+    B.) Jaccard Method
+    ![formula_jaccard](images/jaccard_formula.png)
+    ![jaccard_demo](images/jaccard_demo.png)
+
+    The above two are the most used methods when it comes to string matching use cases.
+
+2. Address matching - This is more or less same case as above where we try to match two strings. So for this problem as well, we can use the fuzzy logic algorithms as Jaccard Method to compute the similarity.
+
+3. Deduplication of photos/documents - There are various deep learning algorithms now which can help us in identifying duplicate documents or if the documents are the same or not.
+
+    A.) Metric Learning:- This is considered as the state of the art method where we learn the representation of image just like what we learn in facial recognition models.
+    ![metric_learning](images/metric_learning.png)
+
+    B.) Embedding Learning:- Embeddings are representations of the words in the context of NLP, however, we can use them for learning the representation of the images and can compute a similarity between images based on the vector representation of original and duplicate images.
+
+4. How to check the quality of the documents I.e. borders, lighting etc
+
+    A.) Fast Fourier Transform: -
+    There are several ways to check the quality of an image. We can use algorithms like FFT (Fast Fourier transform) which gives the idea of how much the image is blurry. Once we know the value of blur we can discard the images which are more blur and ask the user to upload them again.
+    ![FFT](images/FFT_image_blur.png)
+
+    B.) Another idea is to determine the resolution of images based on the pixel density (DPI). This can be done using many libraries like ImageMagick available in Python. If the quality of an image is 95 then it is said to be of the highest quality else not. So based on this user can be asked to upload the image again if needed.
+
+    [Here](https://www.kaggle.com/pokekarat/classify-jpg-data-based-on-its-quality-75-90-95)  is the notebook on Kaggle created for the same purpose. The idea was to split the data based on quality to train different models. But the same idea can be applied to detect the quality of an imge.
+
+
+
+As we can see, not just that getting document's data is important but also doing some processing on it to get the proper data is also important. We can have many other problems like duplication when it comes to documents and that is also needed to be tackled. But, with the rise of Machine Learning these problems are getting solved day by day.
