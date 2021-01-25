@@ -194,9 +194,9 @@ As you can see our system accurately tells most important data from stock resear
 
 We have applied OCR techniques to many other financial use cases and documents and have achived state of the art results.
 
-## What we need to do after we get the data out from documents?
+## Best Practices around - Name/address matching, quality of documents, Deduplication of photos
 
-There are many things we need to do after we get the data out of the documents. Some of the challanges for the same are listed below
+There are many things we need to do after we get the data out of the documents. Some of the challanges for the same are listed below and we will show some best practices for the same.
 
     1) Name matching - I.e. a)  Urvish Patel vs Urvish P.  b) Urvishkumar Patel vs Urvish Patel
     2) Address matching across documents where address entered might be slightly different
@@ -212,10 +212,24 @@ To solve above issues we can have following solution.
     Two such algorithms are
 
     A.) Levenshtein Distance
-    ![edit_distance](images/edit_distance.png)
+
+    Minimum number of single-character edits required to change one word into the other
+
+        Insertions
+        Deletions
+        Substitutions
+
+        Ex:
+        “kitten” and ”sitting” has edit distance = 3
+        kitten → sitten → sittin → sitting
+
+    This is one of the most famous algorithm used for string matching problems.
+
 
     B.) Jaccard Method
+
     ![formula_jaccard](images/jaccard_formula.png)
+
     ![jaccard_demo](images/jaccard_demo.png)
 
     The above two are the most used methods when it comes to string matching use cases.
